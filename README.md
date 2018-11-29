@@ -1,3 +1,5 @@
+[TOC]
+
 # _spaint_
 >__print colorful string in console__
 
