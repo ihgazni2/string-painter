@@ -11,6 +11,7 @@
 
 ## _spanpaint_    
     #spaint.spanpaint(string,(start1,end1),color1,(start2,end2),color2,...)
+    
     spaint.spanpaint("0123456789x",(2,3),'blue',(5,7),'yellow',(9,10),'green')
 ![](spaint/Images/spanpaint.0.png)
   
