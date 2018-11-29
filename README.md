@@ -11,5 +11,6 @@
 
 ## paint word
 
-    spaint.spanpaint("012345789",(2,3),'blue',(5,7),'yellow',(9,10),'green')
+    spaint.spanpaint("0123456789x",(2,3),'blue',(5,7),'yellow',(9,10),'green')
+![](spaint/Images/spanpaint.0.png)
   
