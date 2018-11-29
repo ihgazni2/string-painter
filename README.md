@@ -1,8 +1,15 @@
 # spaint
->__handle ...__
+>__print colorful string in console__
 
-# install
+# INSTALL
 >__pip3 install spaint
 
+# USAGE
 -----------------------------------------------------------------------
->├──0. [](spaint/Images/.0.png)  <br>
+
+  import spaint.spaint as spaint
+
+## paint word
+
+  spaint.spanpaint("012345789",(2,3),'blue',(5,7),'yellow',(9,10),'green')
+  
