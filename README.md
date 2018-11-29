@@ -9,7 +9,7 @@
 
     import spaint.spaint as spaint
 
-## paint word
+## _paint word_
 
     spaint.spanpaint("0123456789x",(2,3),'blue',(5,7),'yellow',(9,10),'green')
 ![](spaint/Images/spanpaint.0.png)
