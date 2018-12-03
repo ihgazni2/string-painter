@@ -555,12 +555,8 @@ def get_sis_from_eis(eis,lngth):
     else:
         pass
     sis = [0]
-    for i in range(0,eis.__len__()):
-        si = eis[i] + 1
-        if(si<lngth):
-            sis.append(si)
-        else:
-            break
+    for i in range(0,eis.__len__()-1):
+        si = eis[i] 
     return(sis)
 
 
