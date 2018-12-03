@@ -607,7 +607,7 @@ def slpaint(*args,**kwargs):
         si = ei
     s = elel.join(strs,'')
     if('rtrn' in kwargs):
-        rtrn = kwargs[rtrn]
+        rtrn = kwargs['rtrn']
     else:
         rtrn = False
     return(_paint(s,color_sec=spans,rtrn=rtrn))
@@ -627,11 +627,11 @@ def mlpaint(lines,colors,**kwargs):
         mlpaint(lines,colors)
     '''
     if('line_sp' in kwargs):
-        line_sp = kwargs[rtrn]
+        line_sp = kwargs['line_sp']
     else:
         line_sp = '\n'
     if('rtrn' in kwargs):
-        rtrn = kwargs[rtrn]
+        rtrn = kwargs['rtrn']
     else:
         rtrn = False
     s = ''
