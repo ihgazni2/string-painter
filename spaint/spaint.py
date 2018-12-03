@@ -468,7 +468,7 @@ else:
         else:
             end = '\n'
         if('rtrn' in kwargs):
-            rtrn = kwargs[rtrn]
+            rtrn = kwargs['rtrn']
         else:
             rtrn = False
         if(rtrn):
