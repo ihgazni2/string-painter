@@ -2,6 +2,8 @@ import os
 import sys
 import copy
 import elist.elist as elel
+import random
+
 ##str
 def str_rstrip(s,char,count):
     '''
