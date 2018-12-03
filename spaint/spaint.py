@@ -652,7 +652,7 @@ def mlpaint(lines,colors,**kwargs):
         cursor = cursor + llen
         s = s + line
     s = str_rstrip(s,line_sp,1)
-    return(_paint(s,color_sec=spans,rtrn=rtrn))
+    return(_paint(s,color_sec=color_sec,rtrn=rtrn))
 
 
 
