@@ -525,7 +525,7 @@ def get_eis_from_sis(sis,lngth):
         else:
             eis.append(lngth)
             break
-    eis.append(lngth - 1)
+    eis.append(lngth)
     return(eis)
 
 def sipaint(s,*args,**kwargs):
