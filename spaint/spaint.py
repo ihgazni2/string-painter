@@ -213,7 +213,10 @@ def rainbow(s,interval=1,**kwargs):
     args = []
     if(rand):
         arr = elel.init(lngth)
-        color_plan = elel.mapv(arr,lambda ele:ANSI256_COLORS_ID2NAME[random.randint(0,255)],[])
+        if(is_win()):
+            color_plan = elel.mapv(arr,lambda ele:WIN8_COLORS_MD[random.randint(0,15)],[])
+        else:
+            color_plan = elel.mapv(arr,lambda ele:ANSI256_COLORS_ID2NAME[random.randint(0,255)],[])
     else:
         color_plan = color_plan * (lngth // color_plan.__len__() + 1)
         color_plan = color_plan[:lngth]
@@ -237,7 +240,10 @@ def rainbow_lines(lines,interval=1,**kwargs):
     lngth = lines.__len__()
     if(rand):
         arr = elel.init(lngth)
-        color_plan = elel.mapv(arr,lambda ele:ANSI256_COLORS_ID2NAME[random.randint(0,255)],[])
+        if(is_win()):
+            color_plan = elel.mapv(arr,lambda ele:WIN8_COLORS_MD[random.randint(0,15)],[])
+        else:
+            color_plan = elel.mapv(arr,lambda ele:ANSI256_COLORS_ID2NAME[random.randint(0,255)],[])
     else:
         color_plan = color_plan * (lngth // color_plan.__len__() + 1)
         color_plan = color_plan[:lngth]
