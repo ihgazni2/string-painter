@@ -60,6 +60,17 @@
 
 
 ## rainbow
+    #spaint.rainbow(word,interval,**kwargs)
+    
+    spaint.rainbow('colorful')
+    spaint.rainbow('colorful')
+    spaint.rainbow('colorful')
+    spaint.rainbow('colorful',2)
+    spaint.rainbow('colorful',2)
+    spaint.rainbow('colorful',2)
+    spaint.rainbow('colorful',rand=False)
+    spaint.rainbow('colorful',rand=False)
+![](spaint/Images/.0.png)
 
 
 ## rainbow_lines
