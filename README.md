@@ -105,6 +105,9 @@
 
 ## win8_
 
-
+    spaint.win8_help()
+    spaint.win8_test(12)
+    spaint.win8_test('lightcyan')
+![](spaint/Images/win8.0.png)
 
   
