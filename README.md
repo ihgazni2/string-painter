@@ -1,5 +1,23 @@
 <!--[TOC]-->
 
+   * [<em>spaint</em>](readme.md#spaint)
+   * [INSTALL](readme.md#install)
+   * [USAGE](readme.md#usage)
+      * [spanpaint](readme.md#spanpaint)
+      * [sieipaint](readme.md#sieipaint)
+      * [sipaint](readme.md#sipaint)
+      * [eipaint](readme.md#eipaint)
+      * [slpaint](readme.md#slpaint)
+      * [mlpaint](readme.md#mlpaint)
+      * [rainbow](readme.md#rainbow)
+      * [rainbow_lines](readme.md#rainbow_lines)
+      * [ansi8_](readme.md#ansi8_)
+      * [ansi256_](readme.md#ansi256_)
+      * [win8_](readme.md#win8_)
+
+<!--[TOC]-->
+
+
 # _spaint_
 >__print colorful string in console__
 
