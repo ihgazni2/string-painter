@@ -1,6 +1,8 @@
 import copy
 from spaint.ansi256 import *
 from spaint.ansi8 import *
+from spaint.common import *
+
 
 def old_stylize_colorsec(color_sec):
     '''
