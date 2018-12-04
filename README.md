@@ -74,10 +74,37 @@
 
 
 ## rainbow_lines
+    #spaint.rainbow_lines(lines,interval,**kwargs)
+    
+    lines = [
+        'the first line',
+        'the second line',
+        'the third line',
+        'the fourth line',
+        'the fifth line'
+    ]
+    
+    spaint.rainbow_lines(lines)
+![](spaint/Images/rainbow_lines.0.png)
 
 ## ansi8_
 
+    spaint.ansi8_help()
+    spaint.ansi8_test(95)
+    spaint.ansi8_test('brightmagenta')
+![](spaint/Images/ansi8.0.png)  
+
+
 ## ansi256_
+
+    spaint.ansi256_help()
+    spaint.ansi256_test(2)
+    spaint.ansi256_test('green')
+![](spaint/Images/ansi256.0.png) 
+
+
+## win8_
+
 
 
   
