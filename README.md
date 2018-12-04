@@ -101,7 +101,7 @@
     spaint.ansi256_test(2)
     spaint.ansi256_test('green')
 ![](spaint/Images/ansi256.0.png) 
-
+![](spaint/Images/ansi256.1.png)
 
 ## win8_
 
