@@ -1,7 +1,7 @@
 from ctypes import *
 from win32con import *
 import sys
-from colorsec import standlize_color_sec 
+from spaint.colorsec import standlize_color_sec 
 
 WIN8_COLORS_MD = {
  'darkgray': 9,

@@ -1,6 +1,6 @@
-from ansi256 import *
-from ansi8 import *
-from colorsec import *
+from spaint.ansi256 import *
+from spaint.ansi8 import *
+from spaint.colorsec import *
 
 #for compatible with old code
 def print_str(text,**kwargs):

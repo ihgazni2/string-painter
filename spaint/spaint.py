@@ -42,11 +42,11 @@ def is_win():
 
 #####engine######
 if(is_win()):
-    from win8 import *
+    from spaint.win8 import *
 else:
-    from ansi256 import *
-    from ansi8 import *
-    from linux import *
+    from spaint.ansi256 import *
+    from spaint.ansi8 import *
+    from spaint.linux import *
     
 
 #################################################
