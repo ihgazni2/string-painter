@@ -27,6 +27,14 @@ def fullfill_colors(spans,old_spans,colors,default_color):
     return(rslt)
 ################################################
 
+def fmt_span(span,lngth):
+    x = elel.uniform_index(span[0],lngth)
+    y = elel.uniform_index(span[1],lngth)
+    l = sorted([x,y])
+    return(tuple(l))
+
+
+###############################################
 def spanpaint(s,*args,**kwargs):
     def map_func(span,color):
         return((span[0],span[1],color))
@@ -36,8 +44,9 @@ def spanpaint(s,*args,**kwargs):
         default_color = 'white'
     args = list(args)
     old_spans = elel.select_evens(args)
-    colors = elel.select_odds(args)
     lngth = s.__len__()
+    old_spans = elel.mapv(old_spans,fmt_span,[lngth])
+    colors = elel.select_odds(args)
     spans = elel.rangize_fullfill(old_spans,lngth)
     ###debug
     print(spans)
