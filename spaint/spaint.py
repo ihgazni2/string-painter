@@ -40,9 +40,9 @@ def spanpaint(s,*args,**kwargs):
     lngth = s.__len__()
     spans = elel.rangize_fullfill(old_spans,lngth)
     ###debug
-    console.log(spans)
-    console.log(old_spans)
-    console.log(colors)
+    print(spans)
+    print(old_spans)
+    print(colors)
     ###debug
     colors = fullfill_colors(spans,old_spans,colors,default_color)
     color_sec = elel.array_map2(spans,colors,map_func=map_func)
