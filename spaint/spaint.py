@@ -39,11 +39,14 @@ def spanpaint(s,*args,**kwargs):
     colors = elel.select_odds(args)
     lngth = s.__len__()
     spans = elel.rangize_fullfill(old_spans,lngth)
+    ###debug
+    console.log(spans)
+    console.log(old_spans)
+    console.log(colors)
+    ###debug
     colors = fullfill_colors(spans,old_spans,colors,default_color)
     color_sec = elel.array_map2(spans,colors,map_func=map_func)
     #debug
-    print(color_sec)
-    print(s)
     #debug
     return(paint(s,color_sec=color_sec,**kwargs))
 
