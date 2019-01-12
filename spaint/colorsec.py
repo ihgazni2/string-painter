@@ -65,6 +65,27 @@ def standlize_color_sec(color_sec,mode,colors_md):
             pass
         new[seq] = copy.deepcopy(list(sec))
         new[seq][2] = color
+        ######## bgcolor
+        try:
+            bgcolor = sec[3]
+        except:
+            pass
+        else:
+            if(isinstance(bgcolor,str)):
+                bgcolor = bgcolor.lower()
+                if(mode == 256):
+                    bgcolor = name2bgcolorId(bgcolor)
+                else:
+                    if(is_win()):
+                        bgcolor = bgcolor.replace('bright','light')
+                    else:
+                        bgcolor = bgcolor.replace('light','bright')
+                    bgcolor = bgcolors_md[bgcolor]
+            else:
+                pass
+            new[seq] = copy.deepcopy(list(sec))
+            new[seq][3] = bgcolor
+        ##########
         new[seq] = tuple(new[seq])
     return(new)
 
