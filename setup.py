@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 setup(
       name="spaint",
-      version = "0.8",
+      version = "0.9",
       description="console,print-colorful-string",
       author="dapeli",
       url="https://github.com/ihgazni2/spaint",
