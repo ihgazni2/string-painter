@@ -74,13 +74,13 @@ def standlize_color_sec(color_sec,mode,colors_md):
             if(isinstance(bgcolor,str)):
                 bgcolor = bgcolor.lower()
                 if(mode == 256):
-                    bgcolor = name2bgcolorId(bgcolor)
+                    bgcolor = name2colorId(bgcolor)
                 else:
                     if(is_win()):
                         bgcolor = bgcolor.replace('bright','light')
                     else:
                         bgcolor = bgcolor.replace('light','bright')
-                    bgcolor = bgcolors_md[bgcolor]
+                    bgcolor = colors_md[bgcolor]
             else:
                 pass
             new[seq] = copy.deepcopy(list(sec))
