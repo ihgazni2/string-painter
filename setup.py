@@ -1,13 +1,13 @@
 from setuptools import setup, find_packages
 setup(
       name="spaint",
-      version = "0.9",
+      version = "1.0",
       description="console,print-colorful-string",
       author="dapeli",
-      url="https://github.com/ihgazni2/spaint",
+      url="https://github.com/ihgazni2/string-painter",
       author_email='terryinzaghi@163.com', 
       license="MIT",
-      long_description = "refer to .md files in https://github.com/ihgazni2/spaint",
+      long_description = "https://github.com/ihgazni2/string-painter",
       classifiers=[
           'Environment :: Console',
           'Environment :: Web Environment',
