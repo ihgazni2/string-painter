@@ -192,7 +192,7 @@ def mlpaint(lines,colors,**kwargs):
     length = lines.__len__()
     clen = colors.__len__()
     if(clen < length):
-        colors = copy.deepcopy(colors)
+        colors = copy.copy(colors)
         colors.extend(['white'] * (length-clen))
     else:
         pass

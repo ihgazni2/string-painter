@@ -12,13 +12,13 @@ def old_stylize_colorsec(color_sec):
         old_stylize_colorsec(new_style_color_sec)
     '''
     if(isinstance(color_sec,dict)):
-        return(copy.deepcopy(color_sec))
+        return(copy.copy(color_sec))
     else:
         pass
     new = {}
     for i in range(0,color_sec.__len__()):
         sec = color_sec[i]
-        new[i+1] = copy.deepcopy(list(sec))
+        new[i+1] = copy.copy(list(sec))
         new[i+1][1] = sec[1] - 1
         new[i+1] = tuple(new[i+1])
     return(new)
@@ -31,13 +31,13 @@ def new_stylize_colorsec(color_sec):
         new_stylize_colorsec(old_style_color_sec)
     '''
     if(isinstance(color_sec,list)):
-        return(copy.deepcopy(color_sec))
+        return(copy.copy(color_sec))
     else:
         pass
     new = []
     for i in range(0,color_sec.__len__()):
         sec = color_sec[i+1]
-        sec = copy.deepcopy(list(sec))
+        sec = copy.copy(list(sec))
         sec[1] = sec[1] + 1
         sec = tuple(sec)
         new.append(sec)
@@ -63,7 +63,7 @@ def standlize_color_sec(color_sec,mode,colors_md):
                 color = colors_md[color]
         else:
             pass
-        new[seq] = copy.deepcopy(list(sec))
+        new[seq] = copy.copy(list(sec))
         new[seq][2] = color
         ######## bgcolor
         try:
