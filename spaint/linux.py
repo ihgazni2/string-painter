@@ -4,7 +4,7 @@ from spaint.colorsec import *
 
 #for compatible with old code
 def print_str(text,**kwargs):
-    print(text)
+    print(text,**kwargs)
 
 def paint_str(orig_string,**kwargs):
     '''
